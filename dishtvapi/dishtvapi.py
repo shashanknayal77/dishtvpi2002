@@ -1,11 +1,3 @@
-####################################################################################
-# Simple GSC Connector for Streamlit by Lee Foot 28th December 2023                #
-# Website  : https://leefoot.co.uk/                                                #
-# Contact  : https://leefoot.co.uk/hire-me/                                        #
-# LinkedIn : https://www.linkedin.com/in/lee-foot/                                 #
-# Twitter  : https://twitter.com/LeeFootSEO                                        #
-####################################################################################
-
 # Standard library imports
 import datetime
 import base64
