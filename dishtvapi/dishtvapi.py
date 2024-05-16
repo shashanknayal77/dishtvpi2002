@@ -85,9 +85,9 @@ def load_config():
             "auth_uri": "https://accounts.google.com/o/oauth2/auth",
             "token_uri": "https://accounts.google.com/o/oauth2/token",
             "redirect_uris": (
-                ["http://localhost:8501"]
+                ["https://share.streamlit.io/shashanknayal77/dishtvpi2002/"]
                 if IS_LOCAL
-                else ["https://share.streamlit.io/shashanknayal77/dishtvpi2002/"]
+                else ["http://localhost:8501"]
             ),
         }
     }
