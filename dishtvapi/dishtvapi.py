@@ -87,7 +87,7 @@ def load_config():
             "redirect_uris": (
                 ["http://localhost:8501"]
                 if IS_LOCAL
-                else ["http://localhost:8501"]
+                else ["https://share.streamlit.io/shashanknayal77/dishtvpi2002"]
             ),
         }
     }
