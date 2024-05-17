@@ -87,7 +87,7 @@ def load_config():
             "redirect_uris": (
                 ["http://localhost:8501"]
                 if IS_LOCAL
-                else st.secrets["installed"]["redirect_uris"]
+                else st.secrets["installed"]["redirect_uris"][0]
             ),
         }
     }
