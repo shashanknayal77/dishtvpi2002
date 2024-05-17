@@ -80,14 +80,14 @@ def load_config():
     """
     client_config = {
         "installed": {
-            "client_id": "947170216938-niq9kjh5otms6inknj2e8p36qd1n80aj.apps.googleusercontent.com",
-            "client_secret": "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",
+            "client_id": st.secrets["installed"]["client_id"],
+            "client_secret": st.secrets["installed"]["client_secret"],
             "auth_uri": "https://accounts.google.com/o/oauth2/auth",
             "token_uri": "https://accounts.google.com/o/oauth2/token",
             "redirect_uris": (
                 ["http://localhost:8501"]
                 if IS_LOCAL
-                else ["https://dishtvpi2002.streamlit.app/"]
+                else st.secrets["installed"]["redirect_uris"]
             ),
         }
     }
