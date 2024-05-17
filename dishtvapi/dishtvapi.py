@@ -87,7 +87,7 @@ def load_config():
             "redirect_uris": (
                 ["http://localhost:8501"]
                 if IS_LOCAL
-                else st.secrets["installed"]["redirect_uris"][0]
+                else st.secrets["installed"]["redirect_uris"]
             ),
         }
     }
@@ -104,7 +104,7 @@ def init_oauth_flow(client_config):
     return Flow.from_client_config(
         client_config,
         scopes=scopes,
-        redirect_uri=client_config["installed"]["redirect_uris"][0],
+        redirect_uri=client_config["installed"]["redirect_uris"],
     )
 
 
