@@ -79,14 +79,16 @@ def load_config():
     Returns a dictionary with the client configuration for OAuth.
     """
     client_config = {
-        "installed": {
-            "client_id": st.secrets["installed"]["client_id"],
-            "client_secret": st.secrets["installed"]["client_secret"],
+       "installed": {
+            "client_id": "888163755481-1jpbv6nci76cvjnb3jg88convmt3ljgg.apps.googleusercontent.com",
+            "client_secret": "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",
             "auth_uri": "https://accounts.google.com/o/oauth2/auth",
             "token_uri": "https://accounts.google.com/o/oauth2/token",
-           "redirect_uris": [
-            "http://localhost:8501"
-        ] if IS_LOCAL else st.secrets["installed"]["redirect_uris"],
+            "redirect_uris": (
+                ["http://localhost:8501"]
+                if IS_LOCAL
+                else ["https://dishtvpi2002.streamlit.app"]
+            ),
         }
     }
     return client_config
