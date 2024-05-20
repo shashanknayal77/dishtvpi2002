@@ -86,8 +86,9 @@ def load_config():
             "token_uri": "https://accounts.google.com/o/oauth2/token",
             "redirect_uris": (
                 # ["http://localhost:8501"]
-                if IS_LOCAL
-                else st.secrets["installed"]["redirect_uris"]
+                if IS_LOCAL:
+                else:
+                    st.secrets["installed"]["redirect_uris"]
             ),
         }
     }
